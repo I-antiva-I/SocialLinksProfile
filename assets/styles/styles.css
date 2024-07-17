@@ -1,0 +1,144 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Inter:400;600;700&display=swap'); 
+
+
+
+/* Variables */
+:root
+{
+    --colors--green:            hsl(75, 94%, 57%);
+    --colors--white:            hsl(0, 0%, 100%);
+    --colors--grey:             hsl(0, 0%, 20%);
+    --colors--dark-grey:        hsl(0, 0%, 12%);
+    --colors--off-black:        hsl(0, 0%, 8%);
+
+    --fonts--font-family:       "Inter";
+    --fonts--font-weight-400:   400;
+    --fonts--font-weight-600:   600;
+    --fonts--font-weight-700:   700;
+    --fonts--font-size-basic:   14px;
+
+    --sizes--mobile-width:      375px;
+    --sizes--desktop-width:     1440px;
+}
+
+
+
+/* Styles */
+*, *::before, *::after
+{
+    box-sizing:     border-box;
+    padding:        0;
+    margin:         0;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+
+    background-color: var(--colors--off-black);
+    color: var(--colors--white);
+
+    font-family: var(--fonts--font-family);
+    font-size: var(--fonts--font-size);
+
+
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main
+{
+    background-color: var(--colors--dark-grey);
+    padding: 2.5rem;
+
+    min-width: 375px;
+    border: none;
+    border-radius: 8px;
+}
+
+h1, h2, h3
+{
+    text-align: center;
+}
+
+
+.profile-picture
+{
+    border-radius: 50%;
+    width: 90px;
+}
+
+.container--for-image
+{
+    margin-bottom: 1.5rem;
+}
+
+.profile-name h1
+{
+    font-size: 1.5rem;
+    font-weight: var(--fonts--font-weight-700);
+}
+
+.profile-name 
+{
+    margin-bottom: 0.5rem;
+}
+
+.location h2
+{
+    color: var(--colors--green);
+    font-size: var(--fonts--font-size-basic);
+    font-weight: var(--fonts--font-weight-600);
+}
+
+.motto
+{
+    margin-top: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.motto h3
+{
+    font-size: var(--fonts--font-size-basic);
+    font-weight: var(--fonts--font-weight-400);
+}
+
+.container.container--for-buttons
+{
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.container.container--for-buttons button
+{
+    background-color: var(--colors--grey);
+    color: var(--colors--white);
+    font-size: var(--fonts--font-size-basic);
+    font-weight: var(--fonts--font-weight-600);
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 0.875rem 0;
+
+}
+
+.container.container--for-buttons button:hover
+{
+    background-color: var(--colors--green);
+    color: var(--colors--off-black);
+
+    cursor: pointer;
+}
